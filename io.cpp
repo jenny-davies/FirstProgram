@@ -1,15 +1,18 @@
 #include "io.h"
 #include <iostream>
 
-int readNumber()
+double readNumber()
 {
 	std::cout << "Enter a number: ";
-	int x{};
+	double x{};
 	std::cin >> x;
 	return x;
 }
 
-void writeAnswer(int x)
+char readOperator()
 {
-	std::cout << "Answer: " << x;
+	std::cout << "Enter the operator: ";
+	char op{};
+	std::cin >> op;
+	return op;
 }

@@ -1,6 +1,6 @@
 #pragma once
 
 // forward declarations for functions in io.cpp
-int readNumber();
+double readNumber();
 
-void writeAnswer(int x);
+char readOperator();

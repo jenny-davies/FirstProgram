@@ -1,10 +1,26 @@
 #include "io.h"
+#include <iostream>
 
 int main()
 {
-	int x{ readNumber() };
-	int y{ readNumber() };
-	writeAnswer(x + y);
+	double x{ readNumber() };
+	char op{ readOperator() };
+	double y{ readNumber() };
+
+	switch (op) {
+	case '+':
+		std::cout << x + y;
+		break;
+	case '-':
+		std::cout << x - y;
+		break;
+	case 'x':
+		std::cout << x * y;
+		break;
+	case '/':
+		std::cout << x / y;
+		break;
+	}
 
 	return 0;
 }
